@@ -1,2 +1,7 @@
 NGT - New-Generation Transport
 Authors: Ian Moffett <ian@osmora.org>, tm85 and the Osmora Project
+
+NGT will be easy to port, fast, tidy, simple, reliable,
+provide optional yet good features to maintain packet integrity,
+etc, that can be flexibly chosen for a packet if the peer/peer
+system software supports it
