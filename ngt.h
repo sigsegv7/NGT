@@ -61,6 +61,9 @@
  *   to be used over NGT. Think of this field like a port
  *   number.
  *
+ * - The `length' field specifies the length of the packet
+ *   in bytes.
+ *
  * - The `caps' field describes standard functionality
  *   implemented by the server. Bits set are marked as
  *   implemented. See CAPS FIELD below.
@@ -104,8 +107,10 @@ struct ngt_hdr {
     uint32_t id;
     uint32_t checksum;
     uint16_t channel;
+    uint16_t length;
     uint8_t caps : 5;
     uint8_t hdr_type;
+    uint8_t seq;
 #if defined(__GNUC__)
     /* Start of data */
     char data[0];
