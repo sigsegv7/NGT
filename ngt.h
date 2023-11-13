@@ -44,7 +44,7 @@
  * of the packet, and allowing the server to
  * determine the integrity of the packet.
  *
- * *EVERY FIELD MUST BE BIG ENDIAN*
+ * *EVERY FIELD MUST BE LITTLE ENDIAN*
  *
  * - The `id' field must be 'NGT' for every packet.
  *   The server shall reject any packet when its
