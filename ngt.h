@@ -88,13 +88,13 @@
  *
  * -- CAPS FIELD --
  *
- *                 Bit number
- *                /
- *      0 1 2 3 4
- *      ~ ~ ~ ~ ~
- *      P R R R R
- *                \
- *                 Purpose
+ *                       Bit number
+ *                      /
+ *      0 1 2 3 4 5 6 7
+ *      ~ ~ ~ ~ ~ ~ ~ ~
+ *      P R R R R R R R
+ *                      \
+ *                       Purpose
  *
  * P: Periodic Connection Check
  * R: Reserved, keep zero.
@@ -108,7 +108,7 @@ struct ngt_hdr {
     uint32_t checksum;
     uint16_t channel;
     uint16_t length;
-    uint8_t caps : 5;
+    uint8_t caps;
     uint8_t hdr_type;
     uint8_t seq;
 #if defined(__GNUC__)
