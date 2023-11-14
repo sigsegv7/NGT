@@ -41,9 +41,10 @@
  * @hdr: Pointer to zero'd NGT header.
  * @req_caps: Caps to request.
  * @channel: Channel to connect over.
+ * @addr: Address to connect to.
  *
- * XXX: This assumes little endian.
- * TODO: Don't assume little endian.
+ * TODO XXX: This assumes little endian.
+ *           Don't assume little endian.
  */
 int
 ngt_inet_connect(struct ngt_hdr *hdr, uint8_t req_caps, uint16_t channel,
