@@ -117,4 +117,4 @@ struct ngt_hdr {
 #endif  /* defined(__GNUC__) */
 };
 
-#endif  /* _NGT_H_ */
+#endif  /* !_NGT_H_ */
