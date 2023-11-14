@@ -99,7 +99,7 @@ ngt_inet_connect(struct ngt_hdr *hdr, uint8_t req_caps, uint16_t channel,
      *      packet header is 0. There is *no need* for any
      *      information to be included after the header during
      *      a request to connect besides maybe some zero-padding
-     *      *if needed*... The server shall also verify that during
+     *      *if needed*... The peer shall also verify that during
      *      a connection request, the length is indeed 0.
      */
     hdr->length = 0;
