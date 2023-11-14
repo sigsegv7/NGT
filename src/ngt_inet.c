@@ -84,15 +84,6 @@ ngt_inet_connect(struct ngt_hdr *hdr, uint8_t req_caps, uint16_t channel,
     peer.sin_family = AF_INET;
     peer.sin_port = channel;
 
-    /* Connect the peer */
-    status = connect(rsockfd, (struct sockaddr *)&peer,
-                     sizeof(struct sockaddr));
-
-    if (status < 0) {
-        close(rsockfd);
-        return status;
-    }
-
     /*
      * Now, we must send the header to the peer.
      *
