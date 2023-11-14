@@ -32,6 +32,8 @@
 
 #include <stdint.h>
 
+#define NGT_ID 'NGT'
+
 /* Header types */
 #define REQ_OPEN        'O'     /* Open Connection (0x43) */
 #define REQ_ACCEPT      'A'     /* Accept connection (0x53) */
