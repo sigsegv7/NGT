@@ -103,7 +103,7 @@
  *   check if the connection is still alive.
  *
  */
-struct ngt_hdr {
+struct __attribute__((packed)) ngt_hdr {
     uint32_t id;
     uint32_t checksum;
     uint16_t channel;
@@ -113,7 +113,7 @@ struct ngt_hdr {
     uint8_t seq;
 #if defined(__GNUC__)
     /* Start of data */
-    char data[0];
+    __extension__ char data[0];
 #endif  /* defined(__GNUC__) */
 };
 
